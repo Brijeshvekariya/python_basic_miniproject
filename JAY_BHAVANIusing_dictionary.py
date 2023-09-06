@@ -1,4 +1,5 @@
 product = {}
+total20 = 0
 #for while loop flag
 status = True
 while status:
@@ -32,6 +33,7 @@ while status:
                 else:
                     product_qty = int(input("Enter Quantity of the product : "))
                     product_price = int(input("Enter the price of product : "))
+                    total20 += product_price
                     #entering data in to child or inner dictionary
                     specific['qty'] = product_qty
                     specific['price'] = product_price
@@ -43,6 +45,7 @@ while status:
             elif man_choice == 2:
                 print("\n-----------------------------------------\n")
                 print(product)
+                print(total20)
                 print("\n-----------------------------------------\n")
             elif man_choice == 3:
                 print("\n-----------------------------------------\n")
@@ -87,7 +90,7 @@ while status:
             print("\n-----------------------------------------\n")    
             food = input("Enter Product Name you want to Order : ").title()
             if product[food]:
-                quantity = int(input("Enter Quantity you want to check : "))
+                quantity = int(input("Enter Quantity you want to order : "))
                 # checking quantity is available with us or not
                 if quantity <= product[food]['qty']:
                     product[food]['qty'] -= quantity
