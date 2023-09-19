@@ -21,7 +21,10 @@ def encode():
         else:
             i.reverse()
         l.append(i)
-    print(l)
+        print("".join(i),end=" ")
+    # print(l)
+
+
 def decoding():
     s = input("Enter any Secret code Message : ").upper()
     new_s = s.split()
@@ -34,10 +37,12 @@ def decoding():
             i.pop(-1)    # how to remove last 3 element from list
             i.insert(0,i[-1])
             i.pop(-1)
-            print(i)
         else:
             i.reverse()
         l.append(i)
+        print("".join(),end=" ")
+        # print(l)
+    # print(" ".join(l))
         
 
 
@@ -59,3 +64,42 @@ while status:
         encode()
     else:
         status = False
+
+
+
+
+
+
+
+
+
+
+
+
+# st = input("Enter message")
+# words = st.split(" ")
+# coding = input("1 for Coding or 0 for Decoding")
+# coding = True if (coding=="1") else False
+# print(coding)
+# if(coding):
+#   nwords = []
+#   for word in words:
+#     if(len(word)>=3):
+#       r1 = "dsf"
+#       r2 = "jkr"
+#       stnew = r1+ word[1:] + word[0] + r2
+#       nwords.append(stnew)
+#     else:
+#       nwords.append(word[::-1])
+#   print(" ".join(nwords))
+
+# else:
+#   nwords = []
+#   for word in words:
+#     if(len(word)>=3): 
+#       stnew = word[3:-3]
+#       stnew = stnew[-1] + stnew[:-1]
+#       nwords.append(stnew)
+#     else:
+#       nwords.append(word[::-1])
+#   print(" ".join(nwords))
