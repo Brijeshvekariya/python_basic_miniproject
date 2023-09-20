@@ -32,15 +32,23 @@ def decoding():
     for i in new_s:
         i = list(i)
         if len(i) >= 3:
-            del i[0:3]
-            del i[-3:-1]
-            i.pop(-1)    # how to remove last 3 element from list
+            # del i[0:3]
+            # print(i)
+            # input()
+            # del i[-3:0]
+            # print(i)
+            # input()
+            # i.pop(-1)    # how to remove last 3 element from list
+            i = i[3:-3].copy()
+            print(i)
             i.insert(0,i[-1])
             i.pop(-1)
+            print(i)
+            input()
         else:
             i.reverse()
         l.append(i)
-        print("".join(),end=" ")
+        print("".join(i),end=" ")
         # print(l)
     # print(" ".join(l))
         
