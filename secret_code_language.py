@@ -40,10 +40,8 @@ def decoding():
             # input()
             # i.pop(-1)    # how to remove last 3 element from list
             i = i[3:-3].copy()
-            print(i)
             i.insert(0,i[-1])
             i.pop(-1)
-            print(i)
             input()
         else:
             i.reverse()
