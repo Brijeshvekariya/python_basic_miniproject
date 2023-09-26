@@ -27,9 +27,8 @@ background_image = pygame.transform.scale(background_image, (WIDTH, HEIGHT))
 reset_button_rect = pygame.Rect(350, 394, 100, 40)
 reset_button = False
 
+# Define the Gameover button's position and dimensions
 game_over_rect = pygame.Rect(306,299,200,50)
-
-# pygame.display.get_caption(f"Score : {score}")
 
 # Paddle dimensions
 PADDLE_WIDTH, PADDLE_HEIGHT = 10, 100

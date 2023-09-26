@@ -61,6 +61,7 @@ while main:
                                 count+=1
                         food_newprice = int(input("Enter New Price of %s : "%find_food))
                         #'a' is for index of entered food name for changing price
+                        food_price.pop(a)
                         food_price.insert(a,food_newprice)
                         print("\n-----------------------------------------\n")
                     else:
